@@ -1,0 +1,15 @@
+<h1>Hello</h1>
+<p>
+こんにちは。お元気ですか。
+<!-- booklist_controller/hello で宣言された変数 -->
+<%= @msg %>
+</p>
+<p>
+現在登録されている本のタイトルは次のとおりです。
+</p>
+
+<p>
+<% @titles.each do |title| %>
+[タイトル] <%= title.name %>, [発売日] <%= title.sales_date %><br />
+<% end %>
+</p>
